@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+.nav-link {
+    margin-left: 50px;
+    border: 2px solid #eeeeee;
+    background-color: white;
+    border-radius: 2.5rem;
+    color: #FD4D46;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link.active, .open>.dropdown-toggle.nav-link {
+    color: #c23b37;
+    border: 2px solid #cccccc;
+}
+
+.btn-primary {
+    background-color: #FD4D46;
+    border-radius: 2.5rem;
+    border: 2px solid #FD4D46;
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: #c23b37;
+    border-radius: 2.5rem;
+    border: 2px solid #c23b37;
+    color: white;
+}
