@@ -1,3 +1,17 @@
 .bg-dark {
-    background-color: #FD4D46 !important;
+  background-color: #FD4D46 !important;
+  color: white;
+  text-decoration: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.bg-dark a {
+  color: white;
+  text-decoration: none;
+}
+
+.phrase {
+    padding-top: 2.5rem;
+    max-width: 65%;
 }
