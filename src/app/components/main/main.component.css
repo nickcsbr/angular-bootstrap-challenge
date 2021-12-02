@@ -1,0 +1,26 @@
+.intro {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  margin-left: 3rem;
+}
+
+.image-row {
+  display: inline-block;
+}
+
+.new-line {
+  margin-top: 2rem;
+  font-size: 30px;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 2.5rem;
+}
+
+.new-line span {
+  color: #FD4D46;
+  font-size: 38px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-right: 1.5rem;
+}

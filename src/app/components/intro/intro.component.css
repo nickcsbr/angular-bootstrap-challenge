@@ -5,4 +5,15 @@
 .container {
     margin-right: 0px !important;
     margin-left: 0px !important;
+    font-family: "Araboto-Thin", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.font-weight-light {
+    font-family: "CreteRound", Arial, Helvetica, sans-serif;
+    font-size: 90px;
+}
+
+.font-weight-light span{
+    color: #FD4D46;
 }

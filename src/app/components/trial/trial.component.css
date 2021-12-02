@@ -1,0 +1,19 @@
+.bg-secondary {
+  background-color: #F2F1EE !important;
+}
+
+.look {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.look h1 {
+  font-size: 74px;
+  font-family: "Araboto-Normal";
+}
+
+.look h3 {
+  font-size: 30px;
+  font-family: "Araboto-Normal";
+  margin: 3.5rem;
+}

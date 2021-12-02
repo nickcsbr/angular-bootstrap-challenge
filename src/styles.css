@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "CreteRound";
+    src: local("CreteRound"), url(./assets/fonts/CreteRound/CreteRound-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Araboto-Normal";
+    src: local("Araboto-Normal"), url(./assets/fonts/Araboto/Araboto-Normal.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Araboto-Thin";
+    src: local("Araboto-Thin"), url(./assets/fonts/Araboto/Araboto-Thin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Araboto-Light";
+    src: local("Araboto-Light"), url(./assets/fonts/Araboto/Araboto-Light.ttf) format("truetype");
+}
+
 .nav-link {
     margin-left: 50px;
     border: 2px solid #eeeeee;
@@ -24,3 +44,5 @@
     border: 2px solid #c23b37;
     color: white;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
