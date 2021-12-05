@@ -3,13 +3,31 @@
   padding-bottom: 5rem;
 }
 
-.look h1 {
-  font-size: 74px;
-  font-family: "Araboto-Normal";
-}
-
 .look h3 {
   font-size: 30px;
   font-family: "Araboto-Normal";
   margin: 3.5rem;
+}
+
+@media screen and (min-width: 801px) {
+  .look h1 {
+    font-size: 74px;
+    font-family: "Araboto-Normal";
+  }
+
+  .look h3 {
+    font-size: 30px;
+    font-family: "Araboto-Normal";
+    margin: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .look h1 {
+    font-size: 30px;
+  }
+
+  .look h3 {
+    font-size: 15px;
+  }
 }

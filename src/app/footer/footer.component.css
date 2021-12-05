@@ -16,8 +16,16 @@
 .phrase {
     padding-top: 2.5rem;
     max-width: 65%;
+    text-align: start;
 }
 
 .item {
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .center-mobile {
+    margin-top: 1rem;
+    text-align: center;
+  }
 }
