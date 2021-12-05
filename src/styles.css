@@ -43,6 +43,7 @@
   border-radius: 2.5rem;
   border: 2px solid #FD4D46;
   color: white;
+  min-height: 24px;
 }
 
 .btn-secondary {

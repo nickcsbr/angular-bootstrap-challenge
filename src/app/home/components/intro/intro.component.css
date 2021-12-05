@@ -1,19 +1,37 @@
 .intro {
-    background-color: #F2F1EE;
+  background-color: #F2F1EE;
 }
 
 .container {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    font-family: "Araboto-Thin", Arial, Helvetica, sans-serif;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  font-family: "Araboto-Thin", Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
+/* .text-top {
+  font-size: 2vw;
+} */
+
 .font-weight-light {
-    font-family: "CreteRound", Arial, Helvetica, sans-serif;
-    font-size: 90px;
+  font-family: "CreteRound", Arial, Helvetica, sans-serif;
+  font-size: 7vw;
 }
 
-.font-weight-light span{
-    color: #FD4D46;
+.font-weight-light span {
+  color: #FD4D46;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 801px) {
+    .text-top {
+    font-size: 30px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 800px) {
+  .text-top {
+    font-size: 16px;
+  }
 }
