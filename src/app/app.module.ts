@@ -20,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ToastrModule } from 'ngx-toastr';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ThankyouComponent } from './thankyou/thankyou.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     SupportComponent,
     ContactComponent,
+    ThankyouComponent,
   ],
   imports: [
     BrowserModule,

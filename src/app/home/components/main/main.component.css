@@ -8,6 +8,10 @@
   display: inline-block;
 }
 
+.img-height {
+  max-height: 340px;
+}
+
 .new-line {
   margin-top: 2rem;
   font-size: 30px;

@@ -38,10 +38,19 @@
 }
 
 .btn-primary {
+  min-width: 200px;
   background-color: #FD4D46;
   border-radius: 2.5rem;
   border: 2px solid #FD4D46;
   color: white;
+}
+
+.btn-secondary {
+  min-width: 200px;
+  border: 2px solid #eeeeee;
+  background-color: white;
+  border-radius: 2.5rem;
+  color: #FD4D46;
 }
 
 .btn-primary:hover,
@@ -53,6 +62,26 @@
   border-radius: 2.5rem;
   border: 2px solid #c23b37;
   color: white;
+}
+
+.form-group {
+  padding-top: 2rem;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
+.form-control {
+  font-size: 20px;
+  height: 60px;
+}
+
+.bg-secondary {
+  background-color: #F2F1EE !important;
+}
+
+.bottom {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 html,

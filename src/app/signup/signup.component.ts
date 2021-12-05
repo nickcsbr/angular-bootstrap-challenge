@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -13,7 +14,8 @@ export class SignupComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private route: Router
     ) {}
 
   ngOnInit(): void {
@@ -31,8 +33,9 @@ export class SignupComponent implements OnInit {
   onSubmit() {
 
     console.log(this.formSignUp);
-    this.toastr.success('We will get in touch soon!', 'Thank You!');
+    this.toastr.success('We have received your request', 'Thank You!');
     this.formSignUp.reset();
+    this.route.navigate(['thankyou']);
   }
 
 }
