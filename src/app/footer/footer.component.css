@@ -15,8 +15,8 @@
 
 .phrase {
     padding-top: 2.5rem;
-    max-width: 65%;
     text-align: start;
+    width: 65%;
 }
 
 .item {
@@ -27,5 +27,8 @@
   .center-mobile {
     margin-top: 1rem;
     text-align: center;
+  }
+  .phrase {
+    width: 100%;
   }
 }

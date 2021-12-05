@@ -13,11 +13,8 @@
 }
 
 .new-line {
-  margin-top: 2rem;
-  font-size: 30px;
   height: 25px;
   line-height: 25px;
-  margin-top: 2.5rem;
 }
 
 .new-line span {
@@ -27,4 +24,27 @@
   vertical-align: middle;
   line-height: normal;
   margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 801px) {
+  .new-line {
+    font-size: 30px;
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .new-line {
+    font-size: 18px;
+    margin-top: 1.5rem;
+  }
+
+  .new-line span {
+    font-size: 25px;
+    margin-right: .5rem;
+  }
+  h1 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
 }

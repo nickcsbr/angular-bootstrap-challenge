@@ -3,12 +3,13 @@
     padding-top: 4px;
 }
 
+.look {
+  background-color: #F2F1EE;
+  padding-top: 3rem;
+}
+
 @media screen and (max-width: 800px) {
-  .look {
-    background-color: #F2F1EE;
-  }
   .look h1 {
-    padding-top: 3rem;
     font-size: 30px;
   }
   
