@@ -21,21 +21,24 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
     this.formSignUp = this.formBuilder.group({
       companyName: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(35)]),
-      segment: new FormControl(''),
-      numberUsers: new FormControl(''),
-      fullName: new FormControl(''),
-      email: new FormControl(''),
-      phone: new FormControl(''),
-      password: new FormControl(''),
+      segment: new FormControl('', [Validators.required, Validators.minLength(3)]),
+      numberUsers: new FormControl('', [Validators.required]),
+      fullName: new FormControl('', [Validators.required, Validators.minLength(3)]),
+      email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")]),
+      phone: new FormControl('', [Validators.required, Validators.minLength(14)]),
+      password: new FormControl('', [Validators.required, Validators.minLength(6)]),
     });
   }
 
   onSubmit() {
-
-    console.log(this.formSignUp);
     this.toastr.success('We have received your request', 'Thank You!');
     this.formSignUp.reset();
     this.route.navigate(['thankyou']);
   }
 
+  isFormValid() {
+    let result = this.formSignUp.touched && !this.formSignUp.valid;
+    console.log(result);
+    return !this.formSignUp.valid;
+  }
 }

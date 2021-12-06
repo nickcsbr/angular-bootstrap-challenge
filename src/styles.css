@@ -65,6 +65,14 @@
   color: white;
 }
 
+.btn-primary:disabled,
+btn-primary[disabled]{
+  background-color: #999999;
+  border-radius: 2.5rem;
+  border: 2px solid #999999;
+  color: white;
+}
+
 .form-group {
   padding-top: 2rem;
   text-align: -moz-center;

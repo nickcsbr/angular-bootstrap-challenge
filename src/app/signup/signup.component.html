@@ -7,44 +7,51 @@
         <div class="col-sm-4">
           <input type="text" size="40" class="form-control" formControlName="companyName" id="companyName"
             placeholder="Company Name">
-        </div>
+            <app-input-error [showError]="this.formSignUp.controls['companyName'].touched && !this.formSignUp.controls['companyName'].valid" errorMessage="Invalid field"></app-input-error>
+        </div>        
       </div>
       <div class="form-group">
         <div class="col-sm-4">
           <input type="text" class="form-control" formControlName="segment" id="segment" placeholder="Segmnt">
-        </div>
+          <app-input-error [showError]="this.formSignUp.controls['segment'].touched && !this.formSignUp.controls['segment'].valid" errorMessage="Invalid field"></app-input-error>
+        </div>        
       </div>
       <div class="form-group">
         <div class="col-sm-4">
-          <input type="number" class="form-control" formControlName="numberUsers" id="numberUsers"
+          <input type="number" min="1" max="50" class="form-control" formControlName="numberUsers" id="numberUsers"
             placeholder="Number of Users*">
+            <app-input-error [showError]="this.formSignUp.controls['numberUsers'].touched && !this.formSignUp.controls['numberUsers'].valid" errorMessage="Invalid field"></app-input-error>
         </div>
         <div class="col-sm-4 text-start">
           <label for="numberUsers" class="control-label">*How many devices would have Conneqt installed.</label>
-        </div>
+        </div>        
       </div>
       <div class="form-group">
         <div class="col-sm-4">
           <input type="text" class="form-control" formControlName="fullName" id="fullName" placeholder="Full Name">
-        </div>
+          <app-input-error [showError]="this.formSignUp.controls['fullName'].touched && !this.formSignUp.controls['fullName'].valid" errorMessage="Invalid field"></app-input-error>
+        </div>        
       </div>
       <div class="form-group">
         <div class="col-sm-4">
           <input type="text" class="form-control" formControlName="email" id="email" placeholder="Email">
-        </div>
+          <app-input-error [showError]="this.formSignUp.controls['email'].touched && !this.formSignUp.controls['email'].valid" errorMessage="Invalid field"></app-input-error>
+        </div>        
       </div>
       <div class="form-group">
         <div class="col-sm-4">
           <input type="text" class="form-control" formControlName="phone" id="phone" placeholder="Telephone">
-        </div>
+          <app-input-error [showError]="this.formSignUp.controls['phone'].touched && !this.formSignUp.controls['phone'].valid" errorMessage="Invalid field"></app-input-error>
+        </div>        
       </div>
       <div class="form-group">
         <div class="col-sm-4">
           <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password">
-        </div>
+          <app-input-error [showError]="this.formSignUp.controls['password'].touched && !this.formSignUp.controls['password'].valid" errorMessage="Invalid field"></app-input-error>
+        </div>        
       </div>
       <div class="bottom">
-        <button type="submit" class="btn-primary">Sign Up and Try for Free</button>
+        <button type="submit" [disabled]="this.formSignUp.invalid" class="btn-primary">Sign Up and Try for Free</button>
       </div>
     </form>
   </div>

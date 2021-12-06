@@ -21,6 +21,12 @@ import { ToastrModule } from 'ngx-toastr';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { ProductsComponent } from './products/products.component';
+import { PaymentComponent } from './payment/payment.component';
+import { CasesComponent } from './cases/cases.component';
+import { FaqComponent } from './faq/faq.component';
+import { BlogComponent } from './blog/blog.component';
+import { WhiteComponent } from './white/white.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +44,12 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
     SupportComponent,
     ContactComponent,
     ThankyouComponent,
+    ProductsComponent,
+    PaymentComponent,
+    CasesComponent,
+    FaqComponent,
+    BlogComponent,
+    WhiteComponent,
   ],
   imports: [
     BrowserModule,
